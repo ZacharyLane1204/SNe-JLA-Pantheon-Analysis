@@ -37,3 +37,5 @@ nlive = int(sys.argv[6])    # number of live points used in sampling ;
 tol = float(sys.argv[7])    # stop evidence integral when next contribution less than tol ;
 
 I used each model and a range of redshift cuts between 0 and 0.1, with 0, 1, 2, 1000, 0.1 as my other parameter choices ;
+
+python jlaAnalysis.py 1 0.033 0 1 2 1000 0.1 is and example line of code
