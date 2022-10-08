@@ -61,6 +61,9 @@ python BayesAnalysis.py 1 0.033 0 1 2 1000 0.1 is and example line of code
 Graphing codes:
 
 '480Histograms.py' for the histograms seen in Fig.~1.7, and in Appendix.~B
+
 'bayes_factor_graphs.py' For the Bayesian Evidence plots
+
 'omega_likelihood_graphs.py' for the omega likelihood graphs
+
 'graphAnalysis.py' for the Bayesian parameter plotting and frequentist on the same graph, this relies on 'parameter_MLE.py' and 'freq_code_analysis.py'
