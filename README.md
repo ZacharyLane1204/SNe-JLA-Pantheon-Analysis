@@ -10,16 +10,34 @@ JLA dataset and covariance matrices used in this analysis can be downloaded from
 http://cdsarc.u-strasbg.fr/viz-bin/qcat?J/A+A/568/A22
 and http://supernovae.in2p3.fr/sdss_snls_jla/covmat_v6.tgz.
 
-Dataset used in analysis computes redshifts in CMB frame from JLA heliocentric redshifts. Running 'python build.py' 
-generates the data file jla.tsv used in this analysis ordered as follows
+Pantheon dataset used in this analysis can be downloaded from
+
+
+
+Pantheon+ dataset used in this analysis can be downloaded from 
+
+https://github.com/PantheonPlusSH0ES/DataRelease/blob/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES.dat
+
+Dataset used in analysis computes redshifts in CMB frame from JLA heliocentric redshifts. 
+
+The Pymultinest can only be installed on linux systems, so for running the bayesian nested code, ensure you are running linux and Python 2.7
+
+## To start the analysis:
+Run 'python BuildJLACases.py' (Py3) to generate the data file, full data sets and the covariance matrices used in this analysis ordered as follows
 
 zcmb, mb, x1, c, logMass, survey id, zhel, RA, DEC
 
-Next, for fast likelihood evaluation, run 'python distmod.py' to produce a look up table of luminosity distances for each SNe Ia 
+For the full Pantheon+ dataset, run 'python pantheonLoad.py' to generate the data set as 'PantheonPlus.txt'.
+
+Next, run 'python 3_distmod.py' (Py3) to produce an interpolationtable of luminosity distances for each SNe Ia 
 and for different cosmological parameter(s).
 
+For the frequentist approach, run 'python freq_loop_code.py' (Py3) to output text files for the parameters and use 'python freq_code_analysis.py' (Py3) to graph and interpret these text files. 
+
+
+For the Bayesian approach
 ------------------------------------------------------------
-Running the main script snsample.py computes the evidence 
+Running the main script BayesAnalysis.py computes the evidence 
 for the model specified by the command line options
 
 model = int(sys.argv[1])    # 1=Timescape, 2=Empty, 3=Flat ; 
@@ -36,6 +54,13 @@ nlive = int(sys.argv[6])    # number of live points used in sampling ;
 
 tol = float(sys.argv[7])    # stop evidence integral when next contribution less than tol ;
 
-I used each model and a range of redshift cuts between 0 and 0.1, with 0, 1, 2, 1000, 0.1 as my other parameter choices ;
+I used each model and a range of redshift cuts between 0 and 0.1, with 0, 1, 2, 1000, 0.00001 as my other parameter choices ;
 
-python jlaAnalysis.py 1 0.033 0 1 2 1000 0.1 is and example line of code
+python BayesAnalysis.py 1 0.033 0 1 2 1000 0.1 is and example line of code
+
+Graphing codes:
+
+'480Histograms.py' for the histograms seen in Fig.~1.7, and in Appendix.~B
+'bayes_factor_graphs.py' For the Bayesian Evidence plots
+'omega_likelihood_graphs.py' for the omega likelihood graphs
+'graphAnalysis.py' for the Bayesian parameter plotting and frequentist on the same graph, this relies on 'parameter_MLE.py' and 'freq_code_analysis.py'
