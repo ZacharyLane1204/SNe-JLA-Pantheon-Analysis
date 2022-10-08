@@ -6,15 +6,15 @@ Dam, Heinesen, Wiltshire (2017) arxiv:1706.07236
 
 This code requires the Multinest module (arXiv:0809.3437) and the Python interface PyMultinest to be installed ()
 
-JLA dataset and covariance matrices used in this analysis can be downloaded from
+JLA dataset and covariance matrices used in this analysis can be downloaded from: 
 http://cdsarc.u-strasbg.fr/viz-bin/qcat?J/A+A/568/A22
 and http://supernovae.in2p3.fr/sdss_snls_jla/covmat_v6.tgz.
 
-Pantheon dataset used in this analysis can be downloaded from
+Pantheon dataset used in this analysis can be downloaded from:
 
 
 
-Pantheon+ dataset used in this analysis can be downloaded from 
+Pantheon+ dataset used in this analysis can be downloaded from: 
 
 https://github.com/PantheonPlusSH0ES/DataRelease/blob/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES.dat
 
