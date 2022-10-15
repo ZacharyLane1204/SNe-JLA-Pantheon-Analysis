@@ -12,11 +12,9 @@ and http://supernovae.in2p3.fr/sdss_snls_jla/covmat_v6.tgz.
 
 Pantheon dataset used in this analysis can be downloaded from:
 
+https://github.com/dscolnic/Pantheon/blob/master/data_fitres/Ancillary_G10.FITRES
 
-
-Pantheon+ dataset used in this analysis can be downloaded from: 
-
-https://github.com/PantheonPlusSH0ES/DataRelease/blob/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/Pantheon%2BSH0ES.dat
+Pantheon+ dataset is not provided under the agreement with the Pantheon+ team.
 
 Dataset used in analysis computes redshifts in CMB frame from JLA heliocentric redshifts. 
 
