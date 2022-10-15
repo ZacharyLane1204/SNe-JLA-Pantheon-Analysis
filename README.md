@@ -27,7 +27,7 @@ zcmb, mb, x1, c, logMass, survey id, zhel, RA, DEC
 
 For the full Pantheon+ dataset, run 'python pantheonLoad.py' to generate the data set as 'PantheonPlus.txt'.
 
-Next, run 'python 3_distmod.py' (Py3) to produce an interpolationtable of luminosity distances for each SNe Ia 
+Next, run 'python 3_distmod.py' (Py3) to produce an interpolation table of luminosity distances for each SNe Ia 
 and for different cosmological parameter(s).
 
 For the frequentist approach, run 'python freq_loop_code.py' (Py3) to output text files for the parameters and use 'python freq_code_analysis.py' (Py3) to graph and interpret these text files. 
