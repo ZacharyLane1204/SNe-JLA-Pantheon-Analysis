@@ -14,7 +14,9 @@ Pantheon dataset used in this analysis can be downloaded from:
 
 https://github.com/dscolnic/Pantheon/blob/master/data_fitres/Ancillary_G10.FITRES
 
-Pantheon+ dataset is not provided under the agreement with the Pantheon+ team.
+Pantheon+ dataset can be downloaded from:
+
+https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR
 
 Dataset used in analysis computes redshifts in CMB frame from JLA heliocentric redshifts. 
 
