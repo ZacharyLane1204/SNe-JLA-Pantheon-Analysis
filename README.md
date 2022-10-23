@@ -56,7 +56,7 @@ tol = float(sys.argv[7])    # stop evidence integral when next contribution less
 
 I used each model and a range of redshift cuts between 0 and 0.1, with 0, 1, 2, 1000, 0.00001 as my other parameter choices ;
 
-python BayesAnalysis.py 1 0.033 0 1 2 1000 0.1 is and example line of code
+python snsample.py 1 0.033 0 1 2 1000 0.1 is and example line of code
 
 Graphing codes:
 
@@ -67,3 +67,5 @@ Graphing codes:
 'omega_likelihood_graphs.py' for the omega likelihood graphs
 
 'graphAnalysis.py' for the Bayesian parameter plotting and frequentist on the same graph, this relies on 'parameter_MLE.py' and 'freq_code_analysis.py'
+
+MAKE SURE TO CHANGE INPUT DATA FILES BEFORE USING THIS CODE!
