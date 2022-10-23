@@ -60,7 +60,7 @@ python BayesAnalysis.py 1 0.033 0 1 2 1000 0.1 is and example line of code
 
 Graphing codes:
 
-'480Histograms.py' for the histograms seen in Fig.~1.7, and in Appendix.~B
+'480Histograms.py' for the histogram seen in Fig.~1.3
 
 'bayes_factor_graphs.py' For the Bayesian Evidence plots
 
